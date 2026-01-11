@@ -15,15 +15,21 @@ There are 3 main parts to this repository:
 The explanations below will dive into how to use each part.
 
 ## VSCode launch script
+Can be found inside the `launch-script` directory.
+
 This is a small Termux script. You can put this in the `.shortcuts` directory to create a shortcut on your home screen that launches VSCode and the webview at once. If you choose to use the Hermit app instead of the provided webview apk, then you will have to make some changes to this script, but this is described in the "Using Hermit instead".
 
 I personally have set up an alias that runs this script whenever I write the command `code` in Termux, to make it more similar to VSCode on Linux.
 
 ## Userscript
+Can be found inside the `userscript` directory.
+
 This userscript provides some fixes to common issues with Code Server on Android. WIP
 
 ## Webview
-This repository provides a webview in the releases tab, built using the [website-to-apk](https://github.com/Jipok/website-to-apk) project. This is all done manually, if someone can figure out how to do this in GitHub Actions and wants to create a PR, feel free to do so.
+Can be found in the Releases tab, and the configuration files (which are only needed to build the apk, not to simply install it) can be found inside the `webview` directory.
+
+This repository provides a webview, built using the [website-to-apk](https://github.com/Jipok/website-to-apk) project. This is all done manually, if someone can figure out how to do this in GitHub Actions and wants to create a PR, feel free to do so.
 
 ### Using Hermit instead
 You can use a Hermit webview instead, and manually add the userscript to it. This is however not recommended, as userscripts in Hermit are a premium feature. Also, the VSCode launch script then also needs to be changed as follows: TODO
