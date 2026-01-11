@@ -11,6 +11,7 @@ There are 3 main parts to this repository:
 - The VSCode launch script
 - The userscript
 - The webview
+
 The explanations below will dive into how to use each part.
 
 ## VSCode launch script
