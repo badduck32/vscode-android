@@ -27,6 +27,11 @@ This repository provides a webview in the releases tab, built using the [website
 ### Using Hermit instead
 You can use a Hermit webview instead, and manually add the userscript to it. This is however not recommended, as userscripts in Hermit are a premium feature. Also, the VSCode launch script then also needs to be changed as follows: TODO
 
+For now (mostly out of lazyness) Hermit is being used for this project.
+
 # FAQ
 ### Why does this project need to exist if something like VHEditor already exists?
 VHEditor is great, but the fact it doesn't use stock Termux and only it's own built in Termux creates issues. For example, the `am start` command simply doesn't work in VHEditor, so opening other apps from the VSCode terminal is impossible.
+
+### Why don't we use VHEditor's webview instead?
+A possibility would be to extract VHEditor's webview and build it as a standalone APK for this project. I am reluctant to do this though, as I've noticed performance issues with VHEditor's webview (and I've not looked at licensing constraints yet). If you really want to use VHEditor's webview, you still can, by only opening its webview and not running its Code Server. I have tried this in the past and it works decently well.
